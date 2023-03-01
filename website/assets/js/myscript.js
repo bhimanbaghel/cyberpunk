@@ -12,4 +12,17 @@ $(document).ready(function(){
                clearInterval(timer);
              }
            }, 1000);
+
+
+
+const galleryImages = document.querySelectorAll('#gallery .portfolio-wrap');
+
+galleryImages.forEach(img => {
+
+  img.addEventListener('click', () => {
+    const portfolioImg = document.querySelector('.portfolio-container img');
+
+    portfolioImg.src = img.firstElementChild.src;
+  });
+});
  });
