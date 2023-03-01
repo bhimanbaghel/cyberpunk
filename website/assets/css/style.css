@@ -394,7 +394,8 @@ section {
 # Facts
 --------------------------------------------------------------*/
 .facts {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
+  text-align: center;
 }
 
 .facts .count-box {
@@ -407,7 +408,8 @@ section {
   font-size: 44px;
   color: #149ddd;
   float: left;
-  line-height: 0;
+  /* line-height: 0; */
+  margin-left: 50px;
 }
 
 .facts .count-box span {
@@ -416,12 +418,13 @@ section {
   display: block;
   font-weight: 700;
   color: #050d18;
-  margin-left: 60px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .facts .count-box p {
   padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
+  /* margin: 0 0 0 60px; */
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #122f57;
