@@ -1143,3 +1143,9 @@ section {
 {
   min-width: 230px;
 }
+
+.timer {
+  text-align: center;
+  font-size: 30px;
+  margin: auto;
+}
