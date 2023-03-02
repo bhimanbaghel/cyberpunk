@@ -14,6 +14,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -83,11 +84,18 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Share2Shine</h2>
+          <h2 id="share2shineheader">Share2Shine</h2>
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
-
+        <p onclick="myFunction()">Capture new content <i class="fa fa-camera fa-lg"></i></p>
+        <div class="convasContainer"></div>
+        <a id="downloadLink" download="/downloaded/captured-image.png"></a>
+        
+        <div class="portfolio-item ">
+          <div id="imageContainershot" onclick="uploadImage()"></div>
+        </div>
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
 
           <div class="col-lg-4 col-md-6 col-12 portfolio-item ">
             <div class="portfolio-wrap" style="height:200px">
