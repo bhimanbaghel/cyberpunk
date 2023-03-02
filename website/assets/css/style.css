@@ -8,6 +8,26 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+#imageContainershot {
+  position: relative;
+  display: inline-block;
+}
+
+#imageContainershot:hover::after {
+  content: "\2713"; /* tick symbol */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  border-radius: 50%;
+}
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
