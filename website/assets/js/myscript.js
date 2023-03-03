@@ -89,7 +89,7 @@ function myFunction() {
 }
 
 function uploadImage() {
-  alert("Your entry has been submitted successfully!");
+  $('#uploadsuccess').modal('toggle');
 }
 
 myFunction();
