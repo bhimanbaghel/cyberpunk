@@ -87,7 +87,39 @@
           <h2 id="share2shineheader">Share2Shine</h2>
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
+
         <!-- <p onclick="myFunction()">Capture new content <i class="fa fa-camera fa-lg"></i></p> -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Congratulations!<i class="bx bx-party"></i></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Your Message will Appear on Big Screen<br>
+                REWARD: 1000 FRENZY
+              </div>
+              <!-- <div class="modal-footer"> -->
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Round 2</li>
+              <li id="timerdata" data-filter=".filter-app">Closses in <span id="counter" class="countdown">90</span> Seconds</li>
+              <!--<li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li> -->
+            </ul>
+          </div>
+        </div>
         <div class="convasContainer"></div>
         <a id="downloadLink" download="/downloaded/captured-image.png"></a>
         
@@ -412,7 +444,7 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">Mining Session</li>
-              <li data-filter=".filter-app">Ends in <span class="countdown">10</span> Minutes</li>
+              <li data-filter=".filter-app">Ends in <span>10</span> Minutes</li>
               <!-- <li data-filter=".filter-app">App</li>
               <li data-filter=".filter-card">Card</li>
               <li data-filter=".filter-web">Web</li> -->

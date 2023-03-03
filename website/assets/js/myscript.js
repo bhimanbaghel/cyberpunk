@@ -1,13 +1,17 @@
 $(document).ready(function () {
   var timer = setInterval(function () {
     var count = $("span.countdown").html();
-    console.log(count);
+    // console.log(count);
     if (count > 1) {
       $("span.countdown").html(count - 1);
     } else {
-      //  $('#form').modal('toggle');
+      
       $("#timerdata").html("Time Up");
       clearInterval(timer);
+      setTimeout(function() {
+        $('#exampleModal').modal('toggle');
+      }, 1000);
+      
     }
   }, 1000);
 
