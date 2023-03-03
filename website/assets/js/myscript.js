@@ -67,11 +67,9 @@ function myFunction() {
         const url = URL.createObjectURL(blob);
         const link = document.getElementById("downloadLink");
 
-        const img = document.createElement("img");
-        img.classList.add("w-100");
-
+        const img = document.getElementById("mainimagetop");
         img.src = url;
-        document.getElementById("imageContainershot").appendChild(img);
+        // document.getElementById("imageContainershot").appendChild(img);
 
         link.href = url;
         link.click();
@@ -91,10 +89,7 @@ function myFunction() {
 }
 
 function uploadImage() {
-  const myDiv = document.getElementById("imageContainershot");
-  const images = myDiv.getElementsByTagName("img");
-  while (images.length > 0) {
-    images[0].parentNode.removeChild(images[0]);
-  }
   alert("Your entry has been submitted successfully!");
 }
+
+myFunction();

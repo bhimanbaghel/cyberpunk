@@ -87,6 +87,8 @@
           <h2 id="share2shineheader">Share2Shine</h2>
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
+
+        <!-- <p onclick="myFunction()">Capture new content <i class="fa fa-camera fa-lg"></i></p> -->
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -118,7 +120,6 @@
             </ul>
           </div>
         </div>
-        <p onclick="myFunction()">Capture new content <i class="fa fa-camera fa-lg"></i></p>
         <div class="convasContainer"></div>
         <a id="downloadLink" download="/downloaded/captured-image.png"></a>
         
@@ -128,9 +129,9 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
 
-          <div class="col-lg-4 col-md-6 col-12 portfolio-item ">
-            <div class="portfolio-wrap" style="height:200px">
-              <img src="assets/img/portfolio/win.gif" class="img-fluid" alt="">
+          <div class="col-lg-4 col-md-6 col-12 portfolio-item" onclick="uploadImage()">
+            <div id="mainimageport" class="portfolio-wrap" style="height:200px">
+              <img id="mainimagetop" src="assets/img/portfolio/win.gif" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/win.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
